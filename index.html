@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Planner</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<h2>📋 Task Planner</h2>
+
+<div class="input-section">
+  <input type="text" id="task-title" placeholder="Task Title">
+  <input type="text" id="task-desc" placeholder="Task Description">
+  <input type="text" id="task-mention" placeholder="Mention">
+  <input type="datetime-local" id="task-datetime">
+  <input type="date" id="task-deadline" placeholder="Deadline">
+  <button onclick="addTask()">Add Task</button>
+</div>
+
+<div class="container">
+  <div class="column">
+    <h3>Planning</h3>
+    <div id="planning"></div>
+  </div>
+  <div class="column">
+    <h3>Processing</h3>
+    <div id="processing"></div>
+  </div>
+  <div class="column">
+    <h3>Completed</h3>
+    <div id="completed"></div>
+  </div>
+  <div class="column">
+    <h3>Finished</h3>
+    <div id="finished"></div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
